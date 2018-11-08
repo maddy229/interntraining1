@@ -12,7 +12,7 @@
 
       <mat-form-field>
         <input matInput  placeholder="Telephone" [formControl]="phoneNumber"  required >
-         <span matPrefix>+61</span>
+         <span matPrefix>+61&nbsp;</span>
         <mat-error *ngIf="phoneNumber.hasError('required')">You must enter a value</mat-error>
 
         <mat-error *ngIf="phoneNumber.hasError('maxlength')">Required 10 digit</mat-error>
@@ -35,6 +35,21 @@
     <button mat-raised-button color="primary" [disabled]="!dashboardForm.valid">Add</button>
   </div>
 
+  <form [formGroup]="myForm" novalidate>
+    <int-phone-prefix [locale]="'es'"
+                    formControlName="myPhone"></int-phone-prefix>
+  <!-- other controls are here... -->
 </form>
+
+
+
+</form>
+
+<input type="button" value="Success" (click) ="func1()">
+<input type="button" value="Error" (click) ="func2()">
+<input type="button" value="Warning" (click) ="func3()">
+<input type="button" value="Info" (click) ="func4()">
+<input type="button" value="Question" (click) ="func5()">
+<input type="button" value="Scroll To Top" (click) ="func6()">
 
 <app-show-person-data></app-show-person-data>

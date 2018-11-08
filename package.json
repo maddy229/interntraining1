@@ -24,9 +24,12 @@
     "@angular/router": "^6.1.0",
     "angular-authentication-service": "^1.1.8",
     "core-js": "^2.5.4",
+    "ng4-intl-phone": "^1.2.1",
+    "ngx-page-scroll": "^5.0.0",
     "npm": "^6.4.1",
     "rxjs": "^6.0.0",
     "rxjs-compat": "^6.3.3",
+    "sweetalert": "^2.1.2",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {

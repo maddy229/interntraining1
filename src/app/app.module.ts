@@ -5,7 +5,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material.module';
-
+import { InternationalPhoneModule } from 'ng4-intl-phone';
+import swal from 'sweetalert';
 
 
 import { routing } from './app.router';
@@ -19,6 +20,8 @@ import { LoginComponent } from './login/login.component';
 
 import { ShowPersonDataComponent } from './show-person-data/show-person-data.component';
 import { DasboardComponent } from './dasboard/dasboard.component';
+
+
 
 
 
@@ -41,7 +44,9 @@ import { DataService } from './data.service';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,
-    routing
+    routing,
+    InternationalPhoneModule,
+    
     
   ],
   providers: [ DataService],
