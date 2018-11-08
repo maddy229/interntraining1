@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from './material.module';
 import { InternationalPhoneModule } from 'ng4-intl-phone';
 import swal from 'sweetalert';
+import {NgxPageScrollModule} from 'ngx-page-scroll';
 
 
 import { routing } from './app.router';
@@ -46,6 +47,7 @@ import { DataService } from './data.service';
     FormsModule,
     routing,
     InternationalPhoneModule,
+    NgxPageScrollModule
     
     
   ],
