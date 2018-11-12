@@ -14,6 +14,13 @@ export class Scroll2TopService {
   }
   s2t()
   {
+    const i = Math.floor(Math.random()*10);
+    window.alert(i);
+
+    if(i!=1)
+    {
+     
+    }
     
   }
   
