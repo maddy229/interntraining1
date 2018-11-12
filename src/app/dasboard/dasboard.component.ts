@@ -4,7 +4,7 @@ import { DataService } from '../data.service';
 
 
 import { SweetAlertService } from '../sweet-service/sweet-alert.service';
-import { Scroll2TopService} from'../scroll2Top/scroll2-top.service';
+
 
 @Component({
   selector: 'app-dasboard',
@@ -17,7 +17,7 @@ export class DasboardComponent implements OnInit {
 
   dashboardForm: FormGroup;
   private myForm: FormGroup;
-  constructor(private dataservice: DataService,private formBuilder: FormBuilder,private sweetservice:SweetAlertService, private scroll2Top :Scroll2TopService) { }
+  constructor(private dataservice: DataService,private formBuilder: FormBuilder,private sweetservice:SweetAlertService) { }
   
   phoneNumber = new FormControl('',[Validators.required,Validators.maxLength(10),Validators.minLength(10)]);
   email = new FormControl('', [Validators.required, Validators.email]);
@@ -62,10 +62,7 @@ export class DasboardComponent implements OnInit {
     this.sweetservice.question();
    }
 
-   func6()
-   {
-    this.scroll2Top.s2t();
-   }
+   
   ngOnInit() {
 
     
