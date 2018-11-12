@@ -1,14 +1,20 @@
-import { Injectable } from '@angular/core';
+import { Component, Injectable, ViewChild, ElementRef,Inject } from '@angular/core';
+import { DOCUMENT} from '@angular/common';
+import { PageScrollConfig, PageScrollService, PageScrollInstance } from 'ngx-page-scroll';
+ 
 
 @Injectable({
   providedIn: 'root'
 })
+
+
 export class Scroll2TopService {
 
-  constructor() { }
-
+  constructor(private pageScrollService: PageScrollService, @Inject(DOCUMENT) private document: any) {
+  }
   s2t()
   {
     
   }
+  
 }

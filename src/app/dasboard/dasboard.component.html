@@ -4,6 +4,7 @@
    
     <mat-form-field>
         <input matInput placeholder="First Name">
+        
       </mat-form-field>
     
       <mat-form-field>
@@ -19,6 +20,8 @@
         <mat-error *ngIf="phoneNumber.hasError('minlength')">Required 10 digit</mat-error>
         
       </mat-form-field>
+
+      
 
       <mat-form-field>
           <input matInput placeholder="Enter your email" [formControl]="email" required>
@@ -51,5 +54,6 @@
 <input type="button" value="Info" (click) ="func4()">
 <input type="button" value="Question" (click) ="func5()">
 <input type="button" value="Scroll To Top" (click) ="func6()">
+
 
 <app-show-person-data></app-show-person-data>
