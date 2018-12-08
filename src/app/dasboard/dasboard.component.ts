@@ -4,6 +4,7 @@ import { DataService } from '../data.service';
 
 
 import { SweetAlertService } from '../sweet-service/sweet-alert.service';
+import { ScrollService } from '../scroll.service'
 
 
 @Component({
@@ -38,6 +39,8 @@ export class DasboardComponent implements OnInit {
     this.phoneNumber.hasError('minLength')? 'Required 10 digit':
     '';
   }
+
+
   
   func1(){
  
@@ -72,8 +75,11 @@ export class DasboardComponent implements OnInit {
     this.myForm = this.formBuilder.group({
       myPhone: ['', Validators.required]
       // other controls are here...
+
   });
 
+
+  ScrollService: screenTop;
   
   }
 

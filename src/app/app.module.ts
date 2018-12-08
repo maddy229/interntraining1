@@ -6,7 +6,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material.module';
 import { InternationalPhoneModule } from 'ng4-intl-phone';
-
+import {NgxPageScrollModule} from 'ngx-page-scroll';
 
 
 
@@ -47,7 +47,8 @@ import { DataService } from './data.service';
     ReactiveFormsModule,
     FormsModule,
     routing,
-    InternationalPhoneModule
+    InternationalPhoneModule,
+    NgxPageScrollModule
     
     
   ],

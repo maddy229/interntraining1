@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import swal from 'sweetalert';
+import swal from 'sweetalert2';
 
 
 @Injectable({
@@ -11,11 +11,30 @@ export class SweetAlertService {
 
   success(){
    
-    swal("Good job!", "You clicked the button!", "success");
+    //swal("Good job!", "You clicked the button!", "success");
+
+    
+
+    swal({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      type: 'warning',
+      
+      showCancelButton: true,
+      showConfirmButton:true,
+      confirmButtonText: 'Yes, delete it!',
+      cancelButtonText: 'No, cancel!',
+      cancelButtonColor: "#DD6B55",
+     
+    });
   }
 
   error(){
-    swal("Good job!", "You clicked the button!", "error");
+    swal({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      type: 'warning',
+    });
   }
 
   warning(){
